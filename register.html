@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>註冊</title>
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    
+    <header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container">
+      <h1 class="mb-0">
+        <a class="navbar-brand py-4 lh-1" href="index.html">
+          logo
+        </a>
+      </h1>
+      
+      <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse flex-grow-0" id="menu">
+        <ul class="navbar-nav me-auto mb-4 mb-lg-0 gap-2 text-center">
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-primary" href="./login.html">登入</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="./register.html">免費註冊</a>
+          </li>
+          <li class="d-none" data-role="admin">
+            <a class="nav-link" href="./admin-list.html">後台管理</a>
+          </li>
+          <li class="d-none" data-role="member">
+            <a class="nav-link" href="./collection.html">收藏列表</a>
+          </li>
+          <li class="d-none" data-role="member">
+            <a class="nav-link" href="./index.html" onclick="louout()">登出</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+    
+
+<main>
+    <div class="container">
+        <h2>註冊</h2>
+        <div class="mb-3 row">
+            <label for="email" class="col-sm-2 col-form-label">帳號</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="email" placeholder="email@example.com">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="pwd" class="col-sm-2 col-form-label">密碼</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="pwd">
+            </div>
+        </div>
+        <input type="button" value="註冊" class="btn btn-primary" onclick="register()">
+    </div>
+</main>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="./assets/js/config.js"></script>
+      
+      <script src="./assets/js/register.js"></script>
+      
+  </body>
+
+</html>

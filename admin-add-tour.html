@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新增景點</title>
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    
+    <header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container">
+      <h1 class="mb-0">
+        <a class="navbar-brand py-4 lh-1" href="./admin-list.html">
+          logo
+        </a>
+      </h1>
+      
+      <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse flex-grow-0" id="menu">
+        <ul class="navbar-nav me-auto mb-4 mb-lg-0 gap-2 text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">回前台</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+    
+
+<main>
+    <div class="container">
+        <h2>新增景點</h2>
+        <a class="btn btn-dark" href="./admin-list.html">回後台</a>
+        <form class="row g-3 my-3">
+            <div class="col-auto">
+                <label for="tour-name" class="visually-hidden">標題</label>
+                <input type="text" class="form-control" id="tour-name" placeholder="標題">
+            </div>
+            <div class="col-auto">
+                <label for="tour-description" class="visually-hidden">內文</label>
+                <input type="text" class="form-control" id="tour-description" placeholder="內文">
+            </div>
+            <div class="col-auto">
+                <label for="tour-imgUrl" class="visually-hidden">圖片網址</label>
+                <input type="text" class="form-control" id="tour-imgUrl" placeholder="圖片網址">
+            </div>
+            <div class="col-auto">
+                <input type="button" value="新增" class="btn btn-primary" onclick="addTour()">
+            </div>
+        </form>
+    </div>
+</main>
+
+    <script src="../assets/js/vendors.js"></script>
+    <script src="../assets/js/all.js"></script>
+    <script src="../assets/js/config.js"></script>
+      
+      <script src="./assets/js/admin-add-tour.js"></script>
+        
+  </body>
+
+</html>
