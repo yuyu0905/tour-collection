@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    
+    <%- include('./components/header.ejs') %>
+    <%- contents %>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="./assets/js/config.js"></script>
+    <% if( current == 'index' ) { %>
+      <script src="./assets/js/index.js"></script>
+    <% } else if( current == 'register' ) { %>  
+      <script src="./assets/js/register.js"></script>
+    <% } else if( current == 'login' ) { %>  
+        <script src="./assets/js/login.js"></script>
+    <% } else if( current == 'tour-detail' ) { %>  
+      <script src="./assets/js/tour-detail.js"></script>
+    <% } else if( current == 'collection' ) { %>  
+      <script src="./assets/js/collection.js"></script>
+    <% } %>  
+  </body>
+
+</html>
