@@ -16,14 +16,14 @@
     <%- include('./components/header-admin.ejs') %>
     <%- contents %>
 
-    <script src="../assets/js/vendors.js"></script>
-    <script src="../assets/js/all.js"></script>
-    <script src="../assets/js/config.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="./assets/js/config.js"></script>
     <% if( current == 'admin-list' ) { %>
       <script src="./assets/js/admin-list.js"></script>
     <% } else if( current == 'admin-add-tour' ) { %>  
       <script src="./assets/js/admin-add-tour.js"></script>
-      <% } else if( current == 'admin-modify-tour' ) { %>  
+    <% } else if( current == 'admin-modify-tour' ) { %>  
         <script src="./assets/js/admin-modify-tour.js"></script>
     <% } %>  
   </body>
